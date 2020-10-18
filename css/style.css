@@ -1,0 +1,31 @@
+
+.img1
+{width: auto; height: 100%; position: relative;
+}
+
+.img2
+{width: 60vh; height: 43vh; 
+position: absolute; top: 38%; left: 39%;
+animation-name: img2opacity;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes img2opacity {
+	from {opacity: 0; }
+	to {opacity: 1; } 
+}
+
+.img2:hover {
+animation-name: img2-grow;
+animation-duration: 3s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes img2-grow {
+	from {width: 60vh; height: 43vh;}
+	to {width: 100vh; height: 72vh;
+		position: ; top: 15%; left: 28%;}
+}
+
